@@ -1,0 +1,49 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Building image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: DockerHub login
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ipoz61/tutor-site-static:latest
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    
+    steps: 
+      - steps:
+        - name: Get latest code
+          uses: actions/checkout@v4
+    
+        - name: Sync files
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+          with:
+            server: 185.127.24.17
+            username: user6310271
+            password: ${{ secrets.ftp_password }}
+            server-dir: www/
