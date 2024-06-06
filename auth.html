@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tutor Site</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-color: #b2d6d7;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="navbar">
+  <div class="logo">
+    <h2>МЕНЮ</h2>
+  </div>
+  <ul class="links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="qa.html">Вопросы</a></li>
+    <li><a href="join.html">К занятиям</a></li>
+    <li><a href="feedback.html">Оставь отзыв</a></li>
+  </ul>
+  <div class="right"><button><a id="login" href="auth.html">Вход/регистрация</a></button></div>
+  <div class="toggle">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+  
+  <h1>Вход в личный кабинет</h1>
+  <div>
+    <form action='/' method='POST' id='login_form'>
+      <label for='email_login'>Почта:</label>
+      <input type='email' id='email_login' name='email'><br>
+      <label for='password_login'>Пароль:</label>
+      <input type='password' id='password_login' name='password'><br>
+      <input type='submit' value='Войти'>
+    </form>
+  </div>
+  <h2>Нет Аккаунта? Зарегистрируйтесь!</h2>
+  <div>
+  <form class="form-horizontal" method="post" id="form">
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Имя <span class="red">*</span></label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Имя" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="lastname" class="col-sm-2 control-label">Фамилия <span class="red">*</span></label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Фамилия" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email <span class="red">*</span></label>
+      <div class="col-sm-6">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-sm-2 control-label">Пароль <span class="red">*</span></label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Пароль" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="reppassword" class="col-sm-2 control-label">Повторите пароль <span class="red">*</span></label>
+      <div class="col-sm-6">
+        <input type="password" class="form-control" id="reppassword" name="reppassword" placeholder="Пароль" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-6">
+        <button type="submit" id="submit">Отправить</button>
+        <div></div>
+      </div>
+    </div>
+  </form>
+    </div>
+	<footer>
+    <p>© 2024 Ilya Pozhidaev</p>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jv/dist/jquery.validate.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>

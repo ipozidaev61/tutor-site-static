@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tutor Site</title>
+  <link href="qa.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #b2d6d7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+  <div class="logo">
+    <h2>МЕНЮ</h2>
+  </div>
+  <ul class="links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="qa.html">Вопросы</a></li>
+    <li><a href="join.html">К занятиям</a></li>
+    <li><a href="feedback.html">Оставь отзыв</a></li>
+  </ul>
+  <div class="right"><button><a id="login" href="auth.html">Вход/регистрация</a></button></div>
+  <div class="toggle">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<p id="welcome" style="color:#077DCF;text-align:right;"></p>
+
+  <div class="master-box">
+  
+  <div class="faq-header">
+    <h1 style="color:white" class="subtitle">Часто задаваемые вопросы</h1>
+    <div class="filter-search">
+      <input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Поиск">
+    </div>  
+  </div>
+  
+  <ul id="myUL">
+    <li class="filterDiv">
+      <span class="accordion-thumb">В каком формате проходят занятия?</span>
+      <p class="accordion-panel">Занятия проходят онлайн, одно занятие идет <em>90 минут</em>.</p>
+    </li>
+    <li class="filterDiv">
+      <span class="accordion-thumb">Какова цена одного занятия?</span>
+      <p class="accordion-panel">Стоимость одного занятия составляет <em>1500 рублей в час</em>.</p>
+    </li>
+	<li class="filterDiv">
+      <span class="accordion-thumb">Можно ли с вами изучать язык с нуля?</span>
+      <p class="accordion-panel">Можно! Мы обучаем языку с самых его азов.</p>
+    </li>
+	<li class="filterDiv">
+      <span class="accordion-thumb">Можно ли взять половину занятия?</span>
+      <p class="accordion-panel">Нет, возможности заниматься менее часа не предусмотрено.</p>
+    </li>
+	<li class="filterDiv">
+      <span class="accordion-thumb">Для чего нужно учить язык?</span>
+      <p class="accordion-panel">Изучение языков расширяет ваш кругозор, открывает перед вами много новых возмжожностей.</p>
+    </li>
+	<li class="filterDiv">
+      <span class="accordion-thumb">Есть ли возрастные ограничения для учеников?</span>
+      <p class="accordion-panel">Да, мы готовы обучать только детей, старше 7 лет.</p>
+    </li>
+  </ul>
+  
+
+</div>
+  <footer>
+    <p>© 2024 Ilya Pozhidaev</p>
+  </footer>
+  <script src="qa.js"></script>
+</body>
+
+</html>

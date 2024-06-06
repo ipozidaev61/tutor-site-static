@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tutor Site</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-color: #b2d6d7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+  <div class="logo">
+    <h2>МЕНЮ</h2>
+  </div>
+  <ul class="links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="qa.html">Вопросы</a></li>
+    <li><a href="join.html">К занятиям</a></li>
+    <li><a href="feedback.html">Оставь отзыв</a></li>
+  </ul>
+  <div class="right"><button><a id="login" href="auth.html">Вход/регистрация</a></button></div>
+  <div class="toggle">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<p id="welcome" style="color:#077DCF;text-align:right;"></p>
+  <h1>Обратная связь</h1>
+  <br>
+  <h2>Оставьте здесь не публично свои пожелания/отзывы, чтобы мы могли стать лучше!</h2>
+  <br>
+  <form id="myForm">
+      <label for="name">Ваше имя:</label>
+      <input id="name" name="name" value="" required>
+      <br>
+      <label for="email">E-mail:</label>
+      <input type='email' id="email" name="email" value="" required>
+      <br>
+      <label for="feedback">Ваш отзыв:</label>
+      <br>
+      <textarea id="feedback" name="feedback" rows="7" cols="50" required></textarea>
+      <br>
+      <input id="postSubmit" type="submit" value="Отправить">
+    </form>
+	<footer>
+    <p>© 2024 Ilya Pozhidaev</p>
+  </footer>
+  <script src="feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tutor Site</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+  body {
+    background-color: #b2d6d7;
+  }
+  </style>
+</head>
+
+<body>
+	
+  <div class="navbar">
+  <div class="logo">
+    <h2>МЕНЮ</h2>
+  </div>
+  <ul class="links">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="qa.html">Вопросы</a></li>
+    <li><a href="join.html">К занятиям</a></li>
+    <li><a href="feedback.html">Оставь отзыв</a></li>
+  </ul>
+  <div class="right"><button><a id="login" href="auth.html">Вход/регистрация</a></button></div>
+  <div class="toggle">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+  <p id="welcome" style="color:#077DCF;text-align:right;"></p>
+  <h1 style="color:#077DCF;text-align:center;"> Репетитор по английскому языку </h1>
+  <img style="display: block;
+    margin-left: auto;
+    margin-right: auto;" 
+    src="Animated-Flag-United-Kingdom.gif" class="center">
+  <div>
+    <h2>Привет!</h2>
+    <p>Начинается набор учеников в группу для изучения английского языка! 
+      <strong>Успей присоединиться!</strong>
+    </p>  
+    <p>Со мной ты сможешь:</p>
+    <ul>
+      <li>Обогатить свой словарный запас</li>
+      <li>Понять грамматику</li>
+      <li>Поднять свой уровень языка</li>
+    </ul>
+    <p>Ознакомьтесь с видами занятий <a href="join.html">по ссылке</a></p>
+    <p>Ответы на свои вопросы вы можете получить <a href="qa.html">здесь</a></p>
+    <video style="display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 25px;
+      background: #3e5a70;
+	  max-width: 100%;
+	  height: auto;
+      padding: 20px;"  width="854" height="480" autoplay controls muted>
+      <source src="The English Language.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="container">
+      <p class="msg">Общее обсуждение:</p>
+      <form id="msgForm" class="msgForm">
+          <input type="text" placeholder="Отправить комментарий" class="input" id="inputBox" />
+          <input type="submit" class="btn" value="Отправить">
+      </form>
+      <div id="messages" class="messages"></div>
+  </div>
+  <footer>
+    <p>© 2024 Ilya Pozhidaev</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
