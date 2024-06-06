@@ -15,7 +15,7 @@ function formSubmit(e) {
     headers: { 'Content-Type': 'text/plain' },
     body: JSON.stringify(Object.fromEntries(formData.entries()))
   })
-    .then(response => {if (response.status==200) alert("Успешно!"); else alert("Не удалось зарегистрироваться")})
+    .then(response => {if (response.status==200) {alert("Успешно!");reload()}; else alert("Не удалось зарегистрироваться")})
     .catch(error => alert("Произошла ошибка"))
 }}
 
