@@ -34,7 +34,6 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    
     steps: 
       - steps:
         - name: Get latest code
@@ -46,4 +45,4 @@ jobs:
             server: 185.127.24.17
             username: user6310271
             password: ${{ secrets.ftp_password }}
-            server-dir: www/
+            server-dir: www/ipozhidaev61.example.com/
